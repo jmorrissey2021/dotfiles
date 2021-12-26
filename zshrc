@@ -65,3 +65,4 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
+export PYTHONPATH="/Users/jackmorrissey/code/jmorrissey2021/data-challenges/04-Decision-Science:$PYTHONPATH"
