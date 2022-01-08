@@ -11,6 +11,7 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
+ZSH_PYENV_QUIET=true
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
@@ -22,6 +23,8 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (to manage your Python versions)
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
+# export PATH="${HOME}/.pyenv/shims:${PATH}" # Needed for Linux/WSL
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)" && RPROMPT+='[🐍 $(pyenv_prompt_info)]'
 
 # Load nvm (to manage your node versions)
